@@ -1,6 +1,6 @@
 example_id                | status | run_time        |
 ------------------------- | ------ | --------------- |
 ./spec/ttt_spec.rb[1:1:1] | passed | 0.00006 seconds |
-./spec/ttt_spec.rb[1:1:2] | passed | 0.00006 seconds |
-./spec/ttt_spec.rb[2:1:1] | passed | 0.00007 seconds |
-./spec/ttt_spec.rb[2:1:2] | passed | 0.00144 seconds |
+./spec/ttt_spec.rb[1:1:2] | passed | 0.00009 seconds |
+./spec/ttt_spec.rb[2:1:1] | passed | 0.00137 seconds |
+./spec/ttt_spec.rb[2:1:2] | passed | 0.00008 seconds |
