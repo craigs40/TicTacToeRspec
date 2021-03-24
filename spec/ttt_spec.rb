@@ -1,5 +1,6 @@
 require_relative '../lib/player'
 require_relative '../lib/board'
+require_relative '../bin/game'
 
 RSpec.describe Player do
   describe 'initialize' do
@@ -21,5 +22,12 @@ RSpec.describe Board do
     it 'does not print the board' do
       expect(@board).to eq(nil)
     end
+  end
+end
+
+RSpec.describe '#display' do
+  it 'should display empty cells' do
+    board = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    expect(display(board)).to start_with('0 | 1 | 2')
   end
 end
