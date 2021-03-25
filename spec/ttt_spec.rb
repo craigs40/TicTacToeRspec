@@ -3,18 +3,20 @@ require_relative '../lib/board'
 require_relative '../bin/game'
 
 RSpec.describe Player do
+  let!(:p1_array) { [] }
+  let!(:p2_array) { [] }
   describe 'initialize' do
     it 'initializes player variables' do
       expect(@p1_array).to eq(nil)
     end
-    it 'does not add a value to variable' do
+    it 'does not add ' do
       expect(@p2_array).to eq(nil)
     end
   end
 end
 
 RSpec.describe Board do
-  @board = Board.new
+  let!(:board) { Board.new }
   describe 'board' do
     it 'initializes the board' do
       expect(@board).to eq(nil)
