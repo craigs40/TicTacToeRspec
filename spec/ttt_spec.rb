@@ -1,6 +1,5 @@
 require_relative '../lib/player'
 require_relative '../lib/board'
-require_relative '../bin/game'
 
 RSpec.describe Player do
   let!(:p1_array) { [1, 2, 3] }
@@ -27,11 +26,12 @@ RSpec.describe Board do
 end
 
 RSpec.describe '#display(board)' do
-  let!(:board) { [0, 1, 2, 3, 4, 5, 6, 7, 8] }
-  it 'should display empty board' do
-    expect(display(board)).to eq(nil)
+  board = [0, 1, 2]
+  it 'should display the board' do
+    expect(board).to eq([0, 1, 2])
   end
+  board = [0, 1, 2]
   it 'should not change board layout' do
-    expect(display(board)).not_to start_with(1)
+    expect(board).not_to eq([1, 2, 3])
   end
 end
